@@ -5,7 +5,6 @@ from queue import Queue
 import urllib.request
 import re
 import logging
-logging.basicConfig(filename='proxy.log', filemode='w', level=logging.DEBUG)
 
 
 """
@@ -28,7 +27,7 @@ class Proxy:
         for position in ['nn','wn']:
             web_url = "http://www.xici.net.co/" + position
             web_headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
-            logging.info(u"正在从%s获取代理" % web_url)
+            logging.info("正在从%s获取代理" % web_url)
             # 存放所有的代理
             proxies_list = []
             try:
@@ -57,7 +56,7 @@ class Proxy:
                     # 写入文件
                     of.write('%s=%s:%s\n' % (proxy['type'], proxy['ip'], proxy['port']))
             except Exception as e:
-                logging.info(e)
+                logging.debug(e)
             finally:
                 logging.info(u"获取了%d个代理" % len(proxies_list))
                 of.close()
@@ -78,9 +77,9 @@ class Proxy:
             logging.debug('close proxies.dat')
             return list2queue(proxies_list)
         except IOError as e:
-            logging.debug('open proxies.dat failed')
+            logging.info('open proxies.dat failed')
             logging.debug(e)
-            logging.debug('转为从网络获取代理')
+            logging.info('转为从网络获取代理')
             p = Proxy(self.proxies_filename)
             proxies_list = p.get_from_web()
             return list2queue(proxies_list)

@@ -3,7 +3,7 @@
 import common.page
 import common.proxy
 import logging
-logging.basicConfig(filename='page.log', filemode='w', level=logging.DEBUG)
+
 
 
 class PageTest:
@@ -52,12 +52,20 @@ class ProxyTest:
         proxies = p.get_from_file()
         print(proxies)
 
+    @staticmethod
+    def test_check_proxy():
+        proxy = 'http=1.1.1:2010'
+        # proxy = 'HTTP=115.227.193.29:3128'
+        print(common.page.check_proxy(proxy))
+
+
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
     # PageTest.test_fetch()
     # PageTest.test_auth_fetch()
-    PageTest.test_proxy_fetch()
+    # PageTest.test_proxy_fetch()
     # ProxyTest.test_get_form_file()
+    ProxyTest.test_check_proxy()
 
 
 
