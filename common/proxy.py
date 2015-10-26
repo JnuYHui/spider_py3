@@ -1,6 +1,7 @@
 #! coding=utf-8
 
 
+from queue import Queue
 import urllib.request
 import re
 import logging
@@ -60,7 +61,7 @@ class Proxy:
             finally:
                 logging.info(u"获取了%d个代理" % len(proxies_list))
                 of.close()
-                return proxies_list
+                return list2queue(proxies_list)
 
     """
     从proxies.dat中读入proxies，并返回
@@ -75,12 +76,19 @@ class Proxy:
                 proxies_list.append(line.strip())
             f.close()
             logging.debug('close proxies.dat')
-            return proxies_list
+            return list2queue(proxies_list)
         except IOError as e:
             logging.debug('open proxies.dat failed')
             logging.debug(e)
             logging.debug('转为从网络获取代理')
             p = Proxy(self.proxies_filename)
             proxies_list = p.get_from_web()
-            return proxies_list
+            return list2queue(proxies_list)
+
+
+def list2queue(a_list):
+    q = Queue(len(a_list))
+    for element in a_list:
+        q.put(element)
+    return q
 
