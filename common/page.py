@@ -1,5 +1,6 @@
 #!encoding=utf-8
 
+from queue import Queue
 import common.proxy
 import threading
 import random
@@ -59,24 +60,26 @@ class Page:
         用代理获取不需要登录的网页,一个代理失效时，自动切换另一个代理
     """
 
-    def proxy_fetch(self, proxies_list):
+    def proxy_fetch(self, proxies_queue):
         # 用proxy获取网页
         logging.debug(u'开始获取网页' + self.url)
         headers = {'Content-type': 'application/x-www-form-urlencoded',
                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 '
                                  '(KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1'}
-        if len(proxies_list) < 1:
-            proxies_list = common.proxy.Proxy.get_from_web()
+        if proxies_queue.qsize() < 1:
+            proxies_queue = common.proxy.Proxy.get_from_web()
             # logging.debug('缺少代理')
             # return False
         loop_times = 0
         while loop_times < 3:
-            proxy, proxy_num = list_random_chose(proxies_list)
-            logging.debug('\t%d-loops, proxy is: %s ' % (loop_times + 1, proxies_list[proxy_num]))
+            protocol, proxy = proxies_queue.get().split('=')
+            logging.debug('\t%d-loops, proxy is: %s ' % (loop_times + 1, proxy))
+            seg = proxy.split(':')
+            proxy_map = {seg[0]: seg[1]}
             try:
                 # 用代理获取网页
-                proxy_support = urllib.request.ProxyHandler(proxy)
+                proxy_support = urllib.request.ProxyHandler(proxy_map)
                 opener = urllib.request.build_opener(proxy_support)
                 html_bytes = opener.open(self.url).read()
                 logging.debug('获取成功')
@@ -94,18 +97,17 @@ class Page:
                     return False
                 logging.debug(e)
                 if check_proxy(proxy):
-                    pass
-                else:
-                    proxies_list.remove(proxy_num)
+                    proxies_queue.put(proxy)
         print('无法获取%s' % self.url)
         logging.debug('获取失败')
         return False
 
 
 def check_proxy(proxy):
-    proxies_list = [proxy]
+    proxies_queue = Queue(1)
+    proxies_queue.put('http='+proxy)
     p = Page('www.baidu.com')
-    if p.proxy_fetch(proxies_list):
+    if p.proxy_fetch(proxies_queue):
         return True
     else:
         return False

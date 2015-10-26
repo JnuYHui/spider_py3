@@ -31,7 +31,6 @@ class PageTest:
     def test_proxy_fetch():
         p = common.proxy.Proxy('proxies.dat')
         proxies_list = p.get_from_file()
-        proxies_list = ['http=10.10.10:1', 'http=2.2.26:12']
         page = common.page.Page('http://baike.baidu.com/subview/3077/11247674.htm')
         html = page.proxy_fetch(proxies_list)
         html = html.decode('utf-8', 'ignore')
