@@ -1,0 +1,233 @@
+INFO:root:获取代理
+DEBUG:root:open proxies.dat
+DEBUG:root:close proxies.dat
+INFO:root:获取代理
+DEBUG:root:open proxies.dat
+DEBUG:root:close proxies.dat
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30014.htm
+DEBUG:root:	1-loops, proxy is: HTTPS=211.144.76.58:9000 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30015.htm
+DEBUG:root:	1-loops, proxy is: HTTP=117.83.76.186:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30016.htm
+DEBUG:root:	1-loops, proxy is: HTTP=36.234.87.21:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30017.htm
+DEBUG:root:	1-loops, proxy is: HTTP=125.123.80.10:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30018.htm
+DEBUG:root:	1-loops, proxy is: HTTP=219.152.27.169:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30019.htm
+DEBUG:root:	1-loops, proxy is: HTTP=112.95.80.139:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30020.htm
+DEBUG:root:	1-loops, proxy is: HTTP=110.72.46.93:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30021.htm
+DEBUG:root:	1-loops, proxy is: HTTP=171.38.36.119:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30022.htm
+DEBUG:root:	1-loops, proxy is: HTTP=122.232.228.195:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30023.htm
+DEBUG:root:	1-loops, proxy is: HTTP=115.46.72.217:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30024.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.11.174:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30025.htm
+DEBUG:root:	1-loops, proxy is: HTTP=123.249.29.201:2861 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30026.htm
+DEBUG:root:	1-loops, proxy is: HTTP=112.95.84.165:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30027.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.88.187.23:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30028.htm
+DEBUG:root:	1-loops, proxy is: HTTP=171.36.29.63:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30029.htm
+DEBUG:root:	1-loops, proxy is: HTTP=171.38.22.232:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30030.htm
+DEBUG:root:	1-loops, proxy is: HTTP=124.251.62.246:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30031.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.18.19.222:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30032.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.11.174:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30033.htm
+DEBUG:root:	1-loops, proxy is: HTTP=60.187.130.10:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30034.htm
+DEBUG:root:	1-loops, proxy is: HTTP=183.140.160.58:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30035.htm
+DEBUG:root:	1-loops, proxy is: HTTP=120.198.236.10:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30036.htm
+DEBUG:root:	1-loops, proxy is: HTTP=115.228.123.63:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30037.htm
+DEBUG:root:	1-loops, proxy is: HTTP=183.239.173.138:8080 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30038.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.224.222.57:8088 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30039.htm
+DEBUG:root:	1-loops, proxy is: HTTP=122.159.76.11:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30040.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.8.199:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30041.htm
+DEBUG:root:	1-loops, proxy is: HTTP=111.252.142.19:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30042.htm
+DEBUG:root:	1-loops, proxy is: HTTP=183.141.174.205:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30043.htm
+DEBUG:root:	1-loops, proxy is: HTTP=110.73.42.72:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30044.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.8.199:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30045.htm
+DEBUG:root:	1-loops, proxy is: HTTP=111.252.142.19:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30046.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.224.222.57:8088 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30047.htm
+DEBUG:root:	1-loops, proxy is: HTTP=110.73.42.147:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30048.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.224.222.57:8088 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30049.htm
+DEBUG:root:	1-loops, proxy is: HTTP=219.152.27.169:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30050.htm
+DEBUG:root:	1-loops, proxy is: HTTP=110.73.42.147:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30051.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.34.205.140:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30052.htm
+DEBUG:root:	1-loops, proxy is: HTTP=123.249.29.201:2861 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30053.htm
+DEBUG:root:	1-loops, proxy is: HTTPS=220.248.224.242:8089 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30054.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.88.31.148:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30055.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.18.19.219:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30056.htm
+DEBUG:root:	1-loops, proxy is: HTTP=125.123.83.153:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30057.htm
+DEBUG:root:	1-loops, proxy is: HTTP=27.191.39.221:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30058.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.224.222.57:8088 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30059.htm
+DEBUG:root:	1-loops, proxy is: HTTP=60.161.24.74:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30060.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.223.230.86:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30061.htm
+DEBUG:root:	1-loops, proxy is: HTTP=183.239.173.138:8080 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30062.htm
+DEBUG:root:	1-loops, proxy is: HTTP=124.251.62.246:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30063.htm
+DEBUG:root:	1-loops, proxy is: HTTP=121.204.165.125:37564 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30064.htm
+DEBUG:root:	1-loops, proxy is: HTTP=183.141.74.104:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30065.htm
+DEBUG:root:	1-loops, proxy is: HTTPS=119.188.94.145:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30066.htm
+DEBUG:root:	1-loops, proxy is: HTTP=112.95.80.139:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30067.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.90.54.217:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30068.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.3.50:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30069.htm
+DEBUG:root:	1-loops, proxy is: HTTP=211.167.105.69:83 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30070.htm
+DEBUG:root:	1-loops, proxy is: HTTP=36.234.87.21:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30071.htm
+DEBUG:root:	1-loops, proxy is: HTTP=122.236.182.24:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30072.htm
+DEBUG:root:	1-loops, proxy is: HTTP=171.39.11.172:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30073.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.88.215.232:8123 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30074.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.9.196:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30075.htm
+DEBUG:root:	1-loops, proxy is: HTTP=182.90.21.78:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30076.htm
+DEBUG:root:	1-loops, proxy is: HTTP=115.228.123.63:3128 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30077.htm
+DEBUG:root:	1-loops, proxy is: HTTP=222.88.236.235:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30078.htm
+DEBUG:root:	1-loops, proxy is: HTTP=112.95.80.139:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30079.htm
+DEBUG:root:	1-loops, proxy is: HTTP=222.88.236.235:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30080.htm
+DEBUG:root:	1-loops, proxy is: HTTP=114.26.9.196:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30081.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.223.169.88:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30082.htm
+DEBUG:root:	1-loops, proxy is: HTTPS=211.144.76.58:9000 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30083.htm
+DEBUG:root:	1-loops, proxy is: HTTP=111.252.142.19:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30084.htm
+DEBUG:root:	1-loops, proxy is: HTTP=112.95.80.139:8090 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30085.htm
+DEBUG:root:	1-loops, proxy is: HTTP=222.88.236.234:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30086.htm
+DEBUG:root:	1-loops, proxy is: HTTP=61.223.168.35:8888 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30087.htm
+DEBUG:root:	1-loops, proxy is: HTTPS=211.144.76.58:9000 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30088.htm
+DEBUG:root:	1-loops, proxy is: HTTP=222.88.236.234:80 
+DEBUG:root:获取成功
+DEBUG:root:开始获取网页http://baike.baidu.com/view/30089.htm
+DEBUG:root:	1-loops, proxy is: HTTP=119.253.252.27:3128 
