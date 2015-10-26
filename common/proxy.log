@@ -1,0 +1,13 @@
+DEBUG:root:open proxies.dat
+DEBUG:root:close proxies.dat
+DEBUG:root:开始获取网页http://baike.baidu.com/subview/3077/11247674.htm
+DEBUG:root:	1-loops, proxy is: http=2.2.26:12 
+DEBUG:root:proxies list status: 1:2
+DEBUG:root:<urlopen error [Errno 11004] getaddrinfo failed>
+DEBUG:root:	2-loops, proxy is: http=10.10.10:1 
+DEBUG:root:proxies list status: 0:1
+DEBUG:root:<urlopen error [Errno 11004] getaddrinfo failed>
+INFO:root:正在从http://www.xici.net.co/nn获取代理
+INFO:root:获取了100个代理
+DEBUG:root:	3-loops, proxy is: HTTP=183.141.72.181:3128 
+DEBUG:root:获取成功
