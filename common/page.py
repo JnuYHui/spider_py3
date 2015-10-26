@@ -68,7 +68,8 @@ class Page:
                    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 '
                                  '(KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1'}
         if proxies_queue.qsize() < 1:
-            proxies_queue = common.proxy.Proxy.get_from_web()
+            p = common.proxy.Proxy('proxies.dat')
+            proxies_queue = p.get_from_web()
             # logging.debug('缺少代理')
             # return False
         loop_times = 0
@@ -83,6 +84,7 @@ class Page:
                 opener = urllib.request.build_opener(proxy_support)
                 html_bytes = opener.open(self.url).read()
                 logging.debug('获取成功')
+                proxies_queue.put(protocol + '=' + proxy)
                 return html_bytes
             except URLError as e:
                 if hasattr(e, 'reason'):
@@ -96,8 +98,8 @@ class Page:
                     logging.debug('获取失败')
                     return False
                 logging.debug(e)
-                if check_proxy(proxy):
-                    proxies_queue.put(proxy)
+                if check_proxy(protocol + '=' + proxy):
+                    proxies_queue.put(protocol + '=' + proxy)
         print('无法获取%s' % self.url)
         logging.debug('获取失败')
         return False
@@ -105,7 +107,7 @@ class Page:
 
 def check_proxy(proxy):
     proxies_queue = Queue(1)
-    proxies_queue.put('http='+proxy)
+    proxies_queue.put(proxy)
     p = Page('www.baidu.com')
     if p.proxy_fetch(proxies_queue):
         return True
