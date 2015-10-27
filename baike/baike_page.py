@@ -38,7 +38,7 @@ class Baike:
                 f.write(html)
                 f.close()
                 logging.debug('写入完成 %s' % page_id)
-        logging.info(u'任务完成'+str(min_id)+"~"+str(max_id))
+        logging.info('子任务完成 '+str(min_id)+"~"+str(max_id))
 
     @staticmethod
     def multi_thread_fetch(min_id, max_id):
@@ -54,9 +54,42 @@ class Baike:
         t1.join()
         t2.join()
         t3.join()
+        logging.info('完成')
+
+    @staticmethod
+    def multi_thread_fetch(min_id, max_id, thread_num):
+        total = max_id - min_id
+        part = int(total / thread_num)
+        bk = Baike()
+        my_thread = []
+        # 创建线程
+        for i in range(0, thread_num):
+            if i == thread_num - 1:
+                a = min_id + i*part
+                b = max_id
+                t = threading.Thread(target=bk.fetch, args=(min_id + i*part, max_id))
+            else:
+                a = min_id + i*part
+                b = min_id + (i + 1)*part
+                t = threading.Thread(target=bk.fetch, args=(min_id + i*part, min_id + (i + 1)*part))
+            my_thread.append(t)
+        # 启动线程
+        for t in my_thread:
+            t.start()
+            logging.info('%d 线程启动' % t.ident)
+        for t in my_thread:
+            t.join()
+        logging.info('完成')
 
 if __name__ == '__main__':
-    logging.basicConfig(filename='baike.log', filemode='w', level=logging.DEBUG, format='%(asctime)s:%(levelname)s:%(message)s')
+    # 设置输出日志格式
+    logging.basicConfig(filename='baike.log',
+                        filemode='w',
+                        level=logging.INFO,
+                        format='%(asctime)s:%(levelname)s:%(message)s')
     # bk = Baike()
-    Baike.multi_thread_fetch(30014, 50000)
     # bk.fetch(4000, 4010)
+    # Baike.multi_thread_fetch(90000, 150000)
+    Baike.multi_thread_fetch(150300, 200000, 6)
+
+
